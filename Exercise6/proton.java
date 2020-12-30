@@ -15,7 +15,8 @@ import javax.swing.JTextArea;
 public class proton {
 
 	private JFrame frame;
-	
+	private JTextArea box_answer;
+	private JTextField modeltxt;
 
 	/**
 	 * Launch the application.
@@ -77,15 +78,16 @@ public class proton {
 		
 		JButton x70 = new JButton("Proton X70");
 		x70.addActionListener(new ActionListener() {
+			
 			public void actionPerformed(ActionEvent arg0) {
 				String model;
 
 				model=("You have Choosen: Proton X70");
-				box_answer.setText(model);
+				modeltxt.setText(model);
 
 
 
-				txtrDisplay.setText("Proton X70:"	+ "\n\nPrice is: RM4,000.00"
+				box_answer.setText("Proton X70:"	+ "\n\nPrice is: RM90,000.00"
 								+ "\n\nBasic Salary minimum RM4,000.00"
 								+ "\n\nMonthly installment: RM 950"
 								+ "\n\nSPECIFICATIONS"
@@ -113,11 +115,11 @@ public class proton {
 				String model;
 
 				model=("You have Choosen: Proton X50");
-				box_answer.setText(model);
+				modeltxt.setText(model);
 
 
 
-				txtrDisplay.setText("Proton X50:"	+ "\n\nPrice is: RM80,000.00"
+				box_answer.setText("Proton X50:"	+ "\n\nPrice is: RM80,000.00"
 								+ "\n\nBasic Salary minimum RM3,500.00"
 								+ "\n\nMonthly installment: RM 800"
 								+ "\n\nSPECIFICATIONS"
@@ -140,9 +142,9 @@ public class proton {
 				String model;
 
 				model=("You have Choosen: Proton Saga");
-				box_answer.setText(model);
+				modeltxt.setText(model);
 
-				txtrDisplay.setText("Proton Saga:"	+ "\n\nPrice is: RM45,000.00"
+				box_answer.setText("Proton Saga:"	+ "\n\nPrice is: RM45,000.00"
 								+ "\n\nBasic Salary minimum RM2,000.00"
 								+ "\n\nMonthly installment: RM 450"
 								+ "\n\nSPECIFICATIONS"
@@ -163,11 +165,11 @@ public class proton {
 				String model;
 
 				model=("You have Choosen: Proton Persona");
-				box_answer.setText(model);
+				modeltxt.setText(model);
 
 
 
-				txtrDisplay.setText("Proton Persona:"	+ "\n\nPrice is: RM50,000.00"
+				box_answer.setText("Proton Persona:"	+ "\n\nPrice is: RM50,000.00"
 								+ "\n\nBasic Salary minimum RM2,500.00"
 								+ "\n\nMonthly installment: RM 600"
 								+ "\n\nSPECIFICATIONS"
@@ -182,8 +184,14 @@ public class proton {
 		frame.getContentPane().add(persona);
 		
 		JTextArea box_answer = new JTextArea();
+		box_answer.setEditable(false);
 		box_answer.setBounds(301, 377, 499, 179);
 		frame.getContentPane().add(box_answer);
+		
+		modeltxt = new JTextField();
+		modeltxt.setBounds(301, 380, 314, 19);
+		frame.getContentPane().add(modeltxt);
+		modeltxt.setColumns(10);
 		
 		
 	}
