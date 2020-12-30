@@ -181,6 +181,7 @@ public class proton {
 		frame.getContentPane().add(persona);
 		
 		box_answer = new JTextArea();
+		box_answer.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		box_answer.setEditable(false);
 		box_answer.setBounds(301, 377, 499, 309);
 		frame.getContentPane().add(box_answer);
