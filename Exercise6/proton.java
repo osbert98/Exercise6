@@ -47,7 +47,7 @@ public class proton {
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.WHITE);
-		frame.setBounds(100, 100, 929, 603);
+		frame.setBounds(100, 100, 929, 689);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -92,7 +92,6 @@ public class proton {
 								+ "\n\nMonthly installment: RM 950"
 								+ "\n\nSPECIFICATIONS"
 								+ "\nFuel Tank Capacity : 60 L"
-								+ "\n\nSafety Features: \t\r\n1.Front SRS Airbags \n2.Anti-Lock Braking System (ABS) \n3.Electronic Brake Distribution (EBD)"
 								+ "\n\nAuto Driving and Parking feature available"
 								+ "\n\nColour available: Red, White, Blue, Silver, Yellow");
 
@@ -124,7 +123,6 @@ public class proton {
 								+ "\n\nMonthly installment: RM 800"
 								+ "\n\nSPECIFICATIONS"
 								+ "\nFuel Tank Capacity : 55 L"
-								+ "\n\nSafety Features: \t\r\n1.Front SRS Airbags \n2.Anti-Lock Braking System (ABS) \n3.Electronic Brake Distribution (EBD)"
 								+ "\n\nAuto Parking feature available"
 								+ "\n\nColour available: Red, White, Blue, Silver, Yellow");
 
@@ -149,7 +147,6 @@ public class proton {
 								+ "\n\nMonthly installment: RM 450"
 								+ "\n\nSPECIFICATIONS"
 								+ "\nFuel Tank Capacity : 50 L"
-								+ "\n\nSafety Features: \t\r\n1.Front SRS Airbags \n2.Anti-Lock Braking System (ABS) \n3.Electronic Brake Distribution (EBD)"
 								+ "\n\nBig space comfortable seat"
 								+ "\n\nColour available: Red, White, Blue, Silver, Yellow");
 			}
@@ -174,7 +171,7 @@ public class proton {
 								+ "\n\nMonthly installment: RM 600"
 								+ "\n\nSPECIFICATIONS"
 								+ "\nFuel Tank Capacity : 50 L"
-								+ "\n\nSafety Features: \t\r\n1.Front SRS Airbags \n2.Anti-Lock Braking System (ABS) \n3.Electronic Brake Distribution (EBD)"
+					
 								+ "\n\nMost fuel efficient model"
 								+ "\n\nColour available: Red, White, Blue, Silver, Yellow");
 			}
@@ -183,12 +180,15 @@ public class proton {
 		persona.setBounds(699, 188, 192, 21);
 		frame.getContentPane().add(persona);
 		
-		JTextArea box_answer = new JTextArea();
+		box_answer = new JTextArea();
 		box_answer.setEditable(false);
-		box_answer.setBounds(301, 377, 499, 179);
+		box_answer.setBounds(301, 377, 499, 309);
 		frame.getContentPane().add(box_answer);
 		
 		modeltxt = new JTextField();
+		modeltxt.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		modeltxt.setBackground(Color.WHITE);
+		modeltxt.setEditable(false);
 		modeltxt.setBounds(301, 380, 314, 19);
 		frame.getContentPane().add(modeltxt);
 		modeltxt.setColumns(10);
